@@ -1,0 +1,416 @@
+body {
+    margin: 0;
+    /* background-color: #005d84; */
+    position: relative;
+
+    
+ }
+ 
+ 
+ #r_bg-img {
+     z-index: -1;
+     position: absolute;
+     background-size: cover;
+     width: 100%;
+     
+ }
+ 
+ .content {
+    
+    display: flex;
+    justify-content: center;
+ }
+
+ /* section 1  The premise*/
+
+ #r_header_logo {
+    position: absolute;
+    width: 74%;
+    top: 13vw;
+    left: 13vw;
+ }
+ 
+ #small_separation{
+   position: absolute;
+   width: 3%;
+   margin-top: 31.3%;
+   
+ }
+
+ .title {
+   width: 74.5%;
+ }
+ .title.s1{
+   position: absolute;
+   margin-top: 36%;
+ }
+
+ #giff{
+   position: absolute;
+   width: 64.9%;
+   margin-top: 44%;
+
+ }
+
+ .text {
+   width: 73.8%;
+ }
+ .text.s1{
+   position: absolute;
+   margin-top: 77.4%;
+ }
+  /* section 2  How does it work?*/
+
+  #separation{
+   position: absolute;
+   width: 4.5%;
+   margin-top: 87.5%;
+  }
+  
+  .title.s2{
+   position: absolute;
+   margin-top: 99.5%;
+ }
+
+ #d2_d1{
+    position: absolute;
+    margin-top: 110%;
+    width: 27%;
+ }
+ #d2_d2{
+    position: absolute;
+    margin-top: 110.4%;
+    margin-left: -1%;
+    width: 27%;
+    
+ }
+ #d2_d3{
+    position: absolute;
+    /* margin-top: 123.12%; */
+    margin-top: 124%;
+    margin-left: 1%;
+    width: 31%;
+
+ }
+ #d2_d4{
+   position: absolute;
+   margin-top: 129.5%;
+   margin-left: -49.5%;
+   width: 17%;
+}
+#d2_d5{
+   position: absolute;
+   margin-top: 127%;
+   width: 25.3%;
+   
+}
+#d2_d6{
+   position: absolute;
+   margin-top: 129%;
+   margin-left: 53%;
+   width: 17.8%;
+   
+}
+#d2_d7_1{
+   position: absolute;
+   margin-top: 136.9%;
+   margin-left: 28.3%;
+   width: 10.5%;
+   
+}
+#d2_d7_2{
+   position: absolute;
+   margin-top: 136.9%;
+   margin-left: -28.7%;
+   width: 10.5%;
+   
+}
+#d2_t1{
+   position: absolute;
+   margin-top: 148.9%;
+   margin-left: 55.1%;
+   width: 21.3%;
+   
+   
+}
+#d2_t2{
+   position: absolute;
+   margin-top: 148.9%;
+   margin-left: -51.3%;
+   width: 15%;
+  
+   
+}
+.text.s2{
+   position: absolute;
+   margin-top: 157.3%;
+   margin-left: 0.2%;
+   width: 74.1%;
+}
+
+.btn{
+   width: 6%;
+   cursor: pointer;
+}
+.btn.s2{
+   position: absolute;
+   margin-top: 133.5%;
+   
+}
+
+/* section 3 Use cases*/
+#separation_2{
+   position: absolute;
+   width: 4.5%;
+   margin-top: 167.3%;
+  }
+.title.s3{
+position: absolute;
+margin-top: 179%;
+}
+/* img 1 */
+#d3_d1{
+   position: absolute;
+   width: 26.8%;
+   margin-top: 188.6%;
+   margin-left: -30.5%;
+}
+#d3_d1_h1{
+   position: absolute;
+   width: 21%;
+   margin-top: 188.6%;
+   margin-left: -32.5%;
+}
+#d3_t1{
+   position: absolute;
+   width: 23%;
+   margin-top: 193.6%;
+   margin-left: -52%;
+}
+.btn.s3_1{
+   position: absolute;
+   margin-top: 192.5%;
+   margin-left: -30.5%;
+   
+}
+/* img 2*/
+#d3_d2{
+   position: absolute;
+   width: 26.8%;
+   margin-top: 188.6%;
+   margin-left: 31.3%;
+   
+}
+#d3_d2_h2{
+   position: absolute;
+   width: 22.5%;
+   margin-top: 188.6%;
+   margin-left: 31.2%;
+}
+#d3_t2{
+   position: absolute;
+   width: 22.9%;
+   margin-top: 193.5%;
+   margin-left: 60%;
+}
+.btn.s3_2{
+   position: absolute;
+   margin-top: 192.5%;
+   margin-left: 31%;
+   
+}
+/* img 3*/
+#d3_d3{
+   position: absolute;
+   width: 26.8%;
+   margin-top: 203.2%;
+   margin-left: -60.5%;
+   
+}
+#d3_d3_h3{
+   position: absolute;
+   width: 7.7%;
+   margin-top: 203.3%;
+   margin-left: -63%;
+}
+#d3_d3_h4{
+   position: absolute;
+   width: 19.5%;
+   margin-top: 213.5%;
+   margin-left: -58.7%;
+}
+#d3_t3{
+   position: absolute;
+   width: 22.9%;
+   margin-top: 228.5%;
+   margin-left: -60.5%;
+}
+.btn.s3_3{
+   position: absolute;
+   margin-top: 223.5%;
+   margin-left: -60.3%;
+}
+/* img 4*/
+#d3_d4{
+   position: absolute;
+   width: 26.8%;
+   margin-top: 203.2%;
+   margin-left: -1%;
+}
+#d3_d4_h4{
+   position: absolute;
+   width: 17.8%;
+   margin-top: 204%;
+   margin-left: -3.5%;
+}
+#d3_t4{
+   position: absolute;
+   width: 23.1%;
+   margin-top: 228.6%;
+   margin-left: .2%;
+}
+.btn.s3_4{
+   position: absolute;
+   margin-top: 223.5%;
+}
+/* img 5*/
+
+#d3_d5{
+   position: absolute;
+   width: 26.8%;
+   margin-top: 203.2%;
+   margin-left: 60.8%;
+}
+#d3_d5_h5{
+   position: absolute;
+   width: 12%;
+   margin-top: 204%;
+   margin-left: 64%;
+}
+
+#d3_t5{
+   position: absolute;
+   width: 22.9%;
+   margin-top: 228.7%;
+   margin-left: 61.2%;
+}
+.btn.s3_5{
+   position: absolute;
+   margin-top: 223.5%;
+   margin-left: 61%;
+}
+.text.s3{
+   position: absolute;
+   margin-top: 236.5%;
+   margin-left: 0.2%;
+   width: 74.1%;
+}
+
+/* section 4 Attributes */
+
+#separation_3{
+   position: absolute;
+   width: 4.5%;
+   margin-top: 247%;
+  }
+.title.s4{
+position: absolute;
+margin-top: 258.7%;
+}
+
+#d4_d1{
+   position: absolute;
+   width: 12%;
+   margin-top: 269.7%;
+   margin-left: -65%;
+}
+#d4_d2{
+   position: absolute;
+   width: 12.1%;
+   margin-top: 269.6%;
+   margin-left: -22%;
+}
+#d4_d3{
+   position: absolute;
+   width: 11.8%;
+   margin-top: 269.9%;
+   margin-left: 21.7%;
+}
+#d4_d4{
+   position: absolute;
+   width: 11.8%;
+   margin-top: 269.9%;
+   margin-left: 65%;
+}
+#d4_t1{
+   position: absolute;
+   width: 21%;
+   margin-top: 283.1%;
+   margin-left: -65.1%;
+}
+#d4_t2{
+   position: absolute;
+   width: 21%;
+   margin-top: 283.1%;
+   margin-left: -21.9%;
+}
+#d4_t3{
+   position: absolute;
+   width: 21%;
+   margin-top: 283.1%;
+   margin-left: 21.5%;
+}
+#d4_t4{
+   position: absolute;
+   width: 21%;
+   margin-top: 283.1%;
+   margin-left: 65.1%;
+}
+#p1 {
+   position: absolute;
+   width: 21%;
+   margin-top: 285.8%;
+   margin-left: -65.1%;
+}
+#p2 {
+   position: absolute;
+   width: 21%;
+   margin-top: 285.8%;
+   margin-left: -21.7%;
+}
+#p3 {
+   position: absolute;
+   width: 21%;
+   margin-top: 285.8%;
+   margin-left: 21.5%;
+}
+#p4 {
+   position: absolute;
+   width: 21%;
+   margin-top: 285.8%;
+   margin-left: 65.1%;
+}
+.text.s4{
+   position: absolute;
+   margin-top: 309.2%;
+   width: 74.1%;
+}
+/* section 5 */
+
+#r_download{
+   position: absolute;
+   width: 5.3%;
+   margin-top: 319.6%;
+   margin-left: -0.2%;
+}
+.text.s5{
+   position: absolute;
+   margin-top: 332.1%;
+   width: 26.9%;
+}
+#r_logo{
+   position: absolute;
+   margin-top: 354%;
+   margin-left: -0.3%;
+   width: 42.19%;
+}
