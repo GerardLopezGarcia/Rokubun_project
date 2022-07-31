@@ -1,12 +1,20 @@
+@font-face {
+font-family: 'Mollen';
+src:"./fonts/Mollen_bold.ttf"
+}
+
+:root{
+   --orange_color: rgba(230,83,0,255);
+   --principal_font: Verdana, Tahoma, sans-serif;
+   --white_color:rgba(255,255,255,255);
+   --grey_color:rgba(95,160,187,255);
+}
 body {
     margin: 0;
     /* background-color: #005d84; */
-    position: relative;
 
-    
  }
- 
- 
+
  #r_bg-img {
      z-index: -1;
      position: absolute;
@@ -19,6 +27,9 @@ body {
     
     display: flex;
     justify-content: center;
+    position: relative;
+    width: 100%;
+    height:100%;
  }
 
  /* section 1  The premise*/
@@ -28,12 +39,15 @@ body {
     width: 74%;
     top: 13vw;
     left: 13vw;
+    opacity: 0;
+    clip-path: polygon(0 100%, 0 100%, 0 0, 0 0);
  }
  
  #small_separation{
    position: absolute;
    width: 3%;
    margin-top: 31.3%;
+
    
  }
 
@@ -43,13 +57,17 @@ body {
  .title.s1{
    position: absolute;
    margin-top: 36%;
+   clip-path: polygon(100% 100%, 0 100%, 0 100%, 100% 100%);
+   opacity:0
+
  }
 
  #giff{
    position: absolute;
    width: 64.9%;
    margin-top: 44%;
-
+   clip-path: polygon(100% 100%, 0 100%, 0 100%, 100% 100%);
+   opacity:0
  }
 
  .text {
@@ -58,7 +76,42 @@ body {
  .text.s1{
    position: absolute;
    margin-top: 77.4%;
+   clip-path: polygon(0 91%, 100% 92%, 100% 100%, 0% 100%);
+   opacity:0
  }
+ .s1_underline {
+   position: absolute;
+   margin-top: 80.2%;
+   margin-left: 5.6%;
+   width: 16%;
+   clip-path: polygon(100% 100%, 0 100%, 0 100%, 100% 100%);
+   opacity:0;
+ }
+ h4.text.s1{
+   position: absolute;
+   margin-top: 78.5%;
+   clip-path: polygon(100% 100%, 0 100%, 0 100%, 100% 100%);
+   opacity:0;
+   margin-left: -0.3%;
+   font-size: 1.64vw;
+   margin-bottom: 0;
+   text-align: center;
+   font-weight: 600;
+   font-family: var(--principal_font);
+   color:var(--white_color)
+ }
+ h1.title.s1{
+   color: var(--orange_color);
+   position: absolute;
+   margin-top: 35.5%;
+   margin-left: 1%;
+   font-size: 5.5vw;
+   word-spacing: -1vw;
+   margin-bottom: 0;
+   text-align: center;
+   font-family: var(--principal_font)
+ }
+
   /* section 2  How does it work?*/
 
   #separation{
@@ -71,12 +124,26 @@ body {
    position: absolute;
    margin-top: 99.5%;
  }
+ h1.title.s2{
+   color: var(--orange_color);
+   position: absolute;
+   margin-top: 99%;
+   margin-left: 0%;
+   font-size: 5.5vw;
+   word-spacing: -1vw;
+   margin-bottom: 0;
+   text-align: center;
+   width: auto;
+   font-family: var(--principal_font)
+ }
+
 
  #d2_d1{
     position: absolute;
     margin-top: 110%;
     width: 27%;
  }
+
  #d2_d2{
     position: absolute;
     margin-top: 110.4%;
@@ -90,8 +157,9 @@ body {
     margin-top: 124%;
     margin-left: 1%;
     width: 31%;
-
  }
+
+
  #d2_d4{
    position: absolute;
    margin-top: 129.5%;
@@ -116,6 +184,7 @@ body {
    margin-top: 136.9%;
    margin-left: 28.3%;
    width: 10.5%;
+   /* clip-path: polygon(52% 0, 52% 0, 54% 100%, 54% 100%); */
    
 }
 #d2_d7_2{
@@ -123,23 +192,36 @@ body {
    margin-top: 136.9%;
    margin-left: -28.7%;
    width: 10.5%;
+   /* clip-path: polygon(52% 0, 52% 0, 54% 100%, 54% 100%); */
    
 }
-#d2_t1{
+
+h6#d2_t1{
    position: absolute;
-   margin-top: 148.9%;
+   margin-top: 149.6%;
    margin-left: 55.1%;
    width: 21.3%;
-   
-   
-}
-#d2_t2{
+   color: var(--grey_color);
    position: absolute;
-   margin-top: 148.9%;
+   font-size: 1.15vw;
+   word-spacing: 0.5vw;
+   margin-bottom: 0;
+   text-align: center;
+   font-family: var(--principal_font)
+}
+
+h6#d2_t2{
+   position: absolute;
+   margin-top: 149.5%;
    margin-left: -51.3%;
-   width: 15%;
-  
-   
+   width: 12%;
+   color: var(--grey_color);
+   position: absolute;
+   font-size: 1.15vw;
+   word-spacing: 0.5vw;
+   margin-bottom: 0;
+   text-align: center;
+   font-family: var(--principal_font)
 }
 .text.s2{
    position: absolute;
@@ -147,7 +229,22 @@ body {
    margin-left: 0.2%;
    width: 74.1%;
 }
-
+.s2_underline {
+   position: absolute;
+   margin-top: 160%;
+   margin-left: -4%;
+   width: 12%;
+ }
+h4.text.s2{
+   position: absolute;
+   margin-top: 158.1%;
+   margin-left: 0.2%;
+   font-size: 1.7vw;
+   text-align: center;
+   font-weight: 600;
+   font-family: var(--principal_font);
+   color:var(--white_color)
+ }
 .btn{
    width: 6%;
    cursor: pointer;
@@ -157,7 +254,42 @@ body {
    margin-top: 133.5%;
    
 }
-
+.btn.s2_close{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 43%;
+}
+.pop_up{
+   position: absolute;
+   margin-top: 107%;
+   background-color: rgba(0,42,58,255);
+   opacity: 0.96;
+   height: 44vw;
+   width: 90vw;
+   text-align: center;
+}
+.popTitle_1{
+   position: absolute;
+   margin-top: 10.4%;
+   margin-left: 19.3%;
+   font-size: 1.8vw;
+   font-family: var(--principal_font);
+   font-weight: 500;
+   color: var(--grey_color);
+}
+.popDescription_1{
+   position: absolute;
+   margin-top: 16.2%;
+   margin-left: 17%;
+   width: 68%;
+   font-size: 2vw;
+   line-height: 2.85vw;
+   font-family: var(--principal_font);
+   color: var(--white_color); 
+}
+.zz{
+   z-index: -1;
+}
 /* section 3 Use cases*/
 #separation_2{
    position: absolute;
@@ -168,6 +300,53 @@ body {
 position: absolute;
 margin-top: 179%;
 }
+h1.title.s3{
+   color: var(--orange_color);
+   position: absolute;
+   margin-top: 178.5%;
+   margin-left: 0%;
+   font-size: 5.5vw;
+   word-spacing: -1vw;
+   margin-bottom: 0;
+   text-align: center;
+   width: auto;
+   font-family: var(--principal_font)
+}
+.pop_up2{
+   position: absolute;
+   margin-top: 187%;
+   background-color: rgba(0,42,58,255);
+   opacity: 0.96;
+   height: 44vw;
+   width: 90vw;
+   text-align: center;
+   z-index: 22;
+}
+.btn.s3_close{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 43%;
+}
+.pop2Title_1{
+   position: absolute;
+   margin-top: 10.4%;
+   font-size: 1.8vw;
+   font-family: var(--principal_font);
+   font-weight: 500;
+   color: var(--grey_color);
+   width: 100%;
+}
+.pop2Description_1{
+   position: absolute;
+   margin-top: 16.2%;
+   margin-left: 17%;
+   width: 68%;
+   font-size: 2vw;
+   line-height: 2.85vw;
+   font-family: var(--principal_font);
+   color: var(--white_color); 
+}
+
 /* img 1 */
 #d3_d1{
    position: absolute;
@@ -181,12 +360,18 @@ margin-top: 179%;
    margin-top: 188.6%;
    margin-left: -32.5%;
 }
-#d3_t1{
+
+h6#d3_t1{
    position: absolute;
    width: 23%;
-   margin-top: 193.6%;
+   margin-top: 194%;
    margin-left: -52%;
+   color: var(--grey_color);
+   font-family: var(--principal_font);
+   text-align: center;
+   font-size: 1.15vw;
 }
+
 .btn.s3_1{
    position: absolute;
    margin-top: 192.5%;
@@ -207,11 +392,16 @@ margin-top: 179%;
    margin-top: 188.6%;
    margin-left: 31.2%;
 }
-#d3_t2{
+
+h6#d3_t2{
    position: absolute;
    width: 22.9%;
-   margin-top: 193.5%;
-   margin-left: 60%;
+   margin-top: 194.1%;
+   margin-left: 59.6%;
+   color: var(--grey_color);
+   font-family: var(--principal_font);
+   text-align: center;
+   font-size: 1.15vw;
 }
 .btn.s3_2{
    position: absolute;
@@ -234,16 +424,25 @@ margin-top: 179%;
    margin-left: -63%;
 }
 #d3_d3_h4{
+   z-index: 20;
    position: absolute;
    width: 19.5%;
    margin-top: 213.5%;
    margin-left: -58.7%;
+   clip-path: polygon(80% 0, 80% 0%, 0 86%, 0 86%);
 }
-#d3_t3{
+
+h6#d3_t3{
    position: absolute;
    width: 22.9%;
-   margin-top: 228.5%;
+   margin-top: 229.3%;
    margin-left: -60.5%;
+   color: var(--grey_color);
+   font-family: var(--principal_font);
+   text-align: center;
+   font-size: 1.15vw;
+   word-spacing: 1vw;
+
 }
 .btn.s3_3{
    position: absolute;
@@ -263,11 +462,17 @@ margin-top: 179%;
    margin-top: 204%;
    margin-left: -3.5%;
 }
-#d3_t4{
+
+h6#d3_t4{
    position: absolute;
    width: 23.1%;
-   margin-top: 228.6%;
+   margin-top: 229.3%;
    margin-left: .2%;
+   color: var(--grey_color);
+   font-family: var(--principal_font);
+   text-align: center;
+   font-size: 1.15vw;
+   word-spacing: 1vw;
 }
 .btn.s3_4{
    position: absolute;
@@ -286,13 +491,29 @@ margin-top: 179%;
    width: 12%;
    margin-top: 204%;
    margin-left: 64%;
+   clip-path: polygon(50% 0%, 55% 22%, 23% 87%, 0 100%, 0 0);
+
+}
+#d3_d5_h5_2{
+   position: absolute;
+   width: 12%;
+   margin-top: 204%;
+   margin-left: 64%;
+   clip-path: polygon(0% 99%, 44% 49%, 62% 7%, 62% 7%, 44% 49%, 0 99%);
+
 }
 
-#d3_t5{
+
+h6#d3_t5{
+
    position: absolute;
    width: 22.9%;
-   margin-top: 228.7%;
-   margin-left: 61.2%;
+   margin-top: 229.3%;
+   margin-left: 60%;
+   color: var(--grey_color);
+   font-family: var(--principal_font);
+   text-align: center;
+   font-size: 1.15vw;
 }
 .btn.s3_5{
    position: absolute;
@@ -305,6 +526,22 @@ margin-top: 179%;
    margin-left: 0.2%;
    width: 74.1%;
 }
+.s3_underline {
+   position: absolute;
+   margin-top: 239.8%;
+   margin-left: -3.5%;
+   width: 8%;
+ }
+ h4.text.s3{
+   position: absolute;
+   margin-top: 237.8%;
+   margin-left: 0.2%;
+   font-size: 1.7vw;
+   text-align: center;
+   font-weight: 600;
+   font-family: var(--principal_font);
+   color:var(--white_color)
+ }
 
 /* section 4 Attributes */
 
@@ -316,6 +553,18 @@ margin-top: 179%;
 .title.s4{
 position: absolute;
 margin-top: 258.7%;
+}
+h1.title.s4{
+   position: absolute;
+   margin-top: 258.6%;
+   margin-left: 0%;
+   font-size: 5.1vw;
+   margin-bottom: 0;
+   text-align: center;
+   width: auto;
+   color: var(--orange_color);
+   word-spacing: -1vw;
+   font-family: var(--principal_font)
 }
 
 #d4_d1{
@@ -342,75 +591,165 @@ margin-top: 258.7%;
    margin-top: 269.9%;
    margin-left: 65%;
 }
-#d4_t1{
+
+h6#d4_t1{
    position: absolute;
    width: 21%;
-   margin-top: 283.1%;
+   margin-top: 283.4%;
    margin-left: -65.1%;
+   color: var(--grey_color);
+   font-family: var(--principal_font);
+   text-align: center;
+   font-size: 1.15vw;
 }
-#d4_t2{
+
+h6#d4_t2{
    position: absolute;
    width: 21%;
-   margin-top: 283.1%;
+   margin-top: 283.4%;
    margin-left: -21.9%;
+   color: var(--grey_color);
+   font-family: var(--principal_font);
+   text-align: center;
+   font-size: 1.15vw;
 }
-#d4_t3{
+
+h6#d4_t3{
    position: absolute;
    width: 21%;
-   margin-top: 283.1%;
+   margin-top: 283.4%;
    margin-left: 21.5%;
+   color: var(--grey_color);
+   font-family: var(--principal_font);
+   text-align: center;
+   font-size: 1.15vw;
 }
-#d4_t4{
+
+h6#d4_t4{
    position: absolute;
    width: 21%;
-   margin-top: 283.1%;
+   margin-top: 283.4%;
+   margin-left: 64.1%;
+   color: var(--grey_color);
+   font-family: var(--principal_font);
+   text-align: center;
+   font-size: 1.15vw;
+}
+
+p#p1 {
+   position: absolute;
+   width: 19.9%;
+   margin-top: 286.2%;
+   margin-left: -64%;
+   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+   opacity: 0;
+   color: var(--grey_color);
+   font-family: var(--principal_font);
+   text-align: left;
+   font-size: 0.9vw;
+   line-height: 1.34vw;
+}
+
+p#p2 {
+   position: absolute;
+   width: 19.9%;
+   margin-top: 286%;
+   margin-left: -21%;
+   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+   opacity: 0;
+   color: var(--grey_color);
+   font-family: var(--principal_font);
+   text-align: left;
+   font-size: 0.9vw;
+   line-height: 1.5vw;
+}
+
+p#p3 {
+   position: absolute;
+   width: 19.9%;
+   margin-top: 286.1%;
+   margin-left: 22%;
+   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+   opacity: 0;
+   color: var(--grey_color);
+   font-family: var(--principal_font);
+   text-align: left;
+   font-size: 0.9vw;
+   line-height: 1.53vw;
+}
+p#p4 {
+   position: absolute;
+   width: 19.6%;
+   margin-top: 285.8%;
    margin-left: 65.1%;
-}
-#p1 {
-   position: absolute;
-   width: 21%;
-   margin-top: 285.8%;
-   margin-left: -65.1%;
-}
-#p2 {
-   position: absolute;
-   width: 21%;
-   margin-top: 285.8%;
-   margin-left: -21.7%;
-}
-#p3 {
-   position: absolute;
-   width: 21%;
-   margin-top: 285.8%;
-   margin-left: 21.5%;
-}
-#p4 {
-   position: absolute;
-   width: 21%;
-   margin-top: 285.8%;
-   margin-left: 65.1%;
+   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+   opacity: 0;
+   color: var(--grey_color);
+   font-family: var(--principal_font);
+   text-align: left;
+   font-size: 0.9vw;
+   line-height: 1.7vw;
 }
 .text.s4{
    position: absolute;
    margin-top: 309.2%;
    width: 74.1%;
 }
+.s4_underline {
+   position: absolute;
+   margin-top: 312.5%;
+   margin-left: -7%;
+   width: 8%;
+ }
+ h4.text.s4{
+   position: absolute;
+   margin-top: 310.5%;
+   margin-left: 0.2%;
+   font-size: 1.7vw;
+   text-align: center;
+   font-weight: 600;
+   font-family: var(--principal_font);
+   color:var(--white_color)
+ }
 /* section 5 */
 
 #r_download{
    position: absolute;
    width: 5.3%;
    margin-top: 319.6%;
-   margin-left: -0.2%;
+   margin-left: -3%;
 }
+
 .text.s5{
    position: absolute;
    margin-top: 332.1%;
    width: 26.9%;
 }
+h4.text.s5{
+   position: absolute;
+   margin-top: 333.3%;
+   margin-left: 0.2%;
+   font-size: 1.06vw;
+   text-align: center;
+   font-weight: 600;
+   font-family: var(--principal_font);
+   color:var(--white_color)
+ }
+ .clickable_text{
+   position: absolute;
+   margin-top: 335.5%;
+   margin-left: -9%;
+   font-size: 1.9vw;
+   text-align: center;
+   font-weight: 500;
+   font-family: var(--principal_font);
+   color:var(--white_color)
+ }
 #r_logo{
    position: absolute;
    margin-top: 354%;
    margin-left: -0.3%;
    width: 42.19%;
+   opacity: 0;
+   clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
 }
